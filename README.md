@@ -67,7 +67,7 @@ Write your contract code in Solidity there, or paste the code from the [provided
 
 Create a directory `test` and a file `words.js` inside it.
 
-Write some tests followin [this guide](https://hardhat.org/tutorial/testing-contracts#writing-tests), or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.js), then use `npx hardhat test` to run them.
+Write some tests following [this guide](https://hardhat.org/tutorial/testing-contracts#writing-tests), or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.js), then use `npx hardhat test` to run them.
 
 
 ## ✨ Deploy to Testnet
