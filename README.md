@@ -1,9 +1,9 @@
-# Smart Contract Development
+# 𝌋 Smart Contract Development
 
 We follow [this tutorial](https://hardhat.org/tutorial) from the HardHat website.
 
 
-## Environment Setup
+## ✨ Environment Setup
 
 First, you should [install `npm` and `Node.js`](https://hardhat.org/tutorial/setting-up-the-environment#installing-node.js).
 
@@ -12,7 +12,7 @@ I also suggest to install [Sublime Text](https://www.sublimetext.com/) as a text
 Once you have that, create a folder with the name of the project (e.g. `words`), and `cd` into it on your terminal.
 
 
-## Initialize the Project
+## ✨ Initialize the Project
 
 Run the following commands and respond with `return` to every question -- no need to fill-in any data at this point
 
@@ -26,7 +26,7 @@ Then run `npx hardhat` and choose `Create an empty hardhat.config.js`.
 
 
 
-## HardHat Configuration
+## ✨ HardHat Configuration
 
 To deploy to a remote network such as mainnet or any testnet, you need to add a network entry to your config file, containing the private key of your wallet.
 
@@ -56,21 +56,21 @@ module.exports = {
 };
 ```
 
-## Smart Contract
+## ✨ Smart Contract
 
 Create a directory `contracts` and a file `words.sol` inside it.
 
 Write your contract code in Solidity there, or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.sol).
 
 
-## Test Locally
+## ✨ Test Locally
 
 Create a directory `test` and a file `words.js` inside it.
 
 Write some tests followin [this guide](https://hardhat.org/tutorial/testing-contracts#writing-tests), or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.js), then use `npx hardhat test` to run them.
 
 
-## Deploy to Testnet
+## ✨ Deploy to Testnet
 
 Create a directory `scripts`, and paste the following into a `deploy.js` file in that directory:
 
@@ -99,7 +99,7 @@ Make sure you have some Goerli ETH on your wallet, and finally run
 and take note of the new contract's address.
 
 
-## Verify your Contract
+## ✨ Verify your Contract
 
 Wait a few seconds, then run
 
