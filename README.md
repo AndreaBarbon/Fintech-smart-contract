@@ -30,7 +30,9 @@ Then run `npx hardhat` and choose `Create an empty hardhat.config.js`.
 
 To deploy to a remote network such as mainnet or any testnet, you need to add a network entry to your config file, containing the private key of your wallet.
 
-To do so, edit the `hardhat.config.js` file as follows:
+To do so, edit the `hardhat.config.js` file as follows. 
+
+Notice that you need to add your wallet's private key (you can get it [from MetaMask](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key)), an [Alchemy](https://www.alchemy.com/) API key and a [Etherscan](https://etherscan.io/) API key. You can use the ones I sent you in the `Canvas` announcement, but please don't share them.
 
 ```
 require("@nomicfoundation/hardhat-toolbox");
