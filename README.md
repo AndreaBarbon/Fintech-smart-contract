@@ -1,25 +1,33 @@
-
 # Smart Contract Development
 
-We follow [this tutorial](https://hardhat.org/tutorial) on the HardHat website
+We follow [this tutorial](https://hardhat.org/tutorial) from the HardHat website.
+
+
+## Environment Setup
+
+First, you should [install `npm` and `Node.js`](https://hardhat.org/tutorial/setting-up-the-environment#installing-node.js).
+I also suggest to install [Sublime Text](https://www.sublimetext.com/) as a text editor.
+Once you have that, create a folder with the name of the project (e.g. `words`), and `cd` into it on your terminal.
 
 
 ## Initialize the project
 
-First, you should [install `npm` and `Node.js`](https://hardhat.org/tutorial/setting-up-the-environment#installing-node.js).
-Then, run the following commands and choose `create empty project`
+Run the following commands and respond with `return` to every question -- no need to fill-in any data at this point
 
 ```
 npm init
 npm install --save-dev hardhat
-npx hardhat
 npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```
 
+Then run `npx hardhat` and choose `Create an empty hardhat.config.js`.
+
+
+
 ## HardHat Configuration
 
-To deploy to a remote network such as mainnet or any testnet, you need to add a network entry to your `hardhat.config.js` file, containing the private key of your wallet.
-Hence, edit the `hardhat.config.js` file as follows.
+To deploy to a remote network such as mainnet or any testnet, you need to add a network entry to your config file, containing the private key of your wallet.
+To do so, edit the `hardhat.config.js` file as follows:
 
 ```
 require("@nomicfoundation/hardhat-toolbox");
@@ -46,13 +54,13 @@ module.exports = {
 ## Smart Contract
 
 Create a directory `contracts` and a file `words.sol` inside it.
-Write your contract code in Solidity there.
+Write your contract code in Solidity there, or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.sol).
 
 
 ## Test Locally
 
 Create a directory `test` and a file `words.js` inside it.
-Write some tests, then use `npx hardhat test` to run them.
+Write some tests followin [this guide](https://hardhat.org/tutorial/testing-contracts#writing-tests), or paste the code from the [provided file](https://github.com/AndreaBarbon/Fintech-smart-contract/blob/main/words.js), then use `npx hardhat test` to run them.
 
 
 ## Deploy to Testnet
